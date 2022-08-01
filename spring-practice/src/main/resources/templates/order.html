@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Hello World!</h1>
+    <h2 th:text="'單號:'+${order.seq}+'價錢:'+${order.totalPrice}+'服務人員:'+${order.waiter}"></h2>
+    <h3>餐點</h3>
+    <h3 th:text ="${order.meals.get(0).name} + '    ' + ${order.meals.get(0).price}"></h3>
+</body>
+</html>
